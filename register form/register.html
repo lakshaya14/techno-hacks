@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 15px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        textarea {
+            height: 100px;
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form action="next.php" method="POST">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="name" placeholder="Enter your first name" required>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="num" placeholder="Enter your last name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="num" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gen">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="sprId">Spr Id:</label>
+            <input type="text" id="sprId" name="num" placeholder="Enter your ID" required>
+
+            <label for="university">University:</label>
+            <input type="text" id="university" name="num" placeholder="Enter your university" required>
+
+            <label for="review">Review:</label>
+            <textarea id="review" name="review" placeholder="Write a review"></textarea>
+
+            <input type="submit" name="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
